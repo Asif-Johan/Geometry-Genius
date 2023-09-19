@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+     <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="bootstrap.min.js"></script>
+</head>
+<body>
+    <main class="w-75 mx-auto">
+        <div class="w-75 mx-auto ">
+        <div class="mt-5">
+            <h1 class="mb-3">What is DOM and what is the purpose of DOM?</h1>
+            <p>DOM or Document Object Model is a way to interact with and manipulate the HTML. It makes the contents of the HTML page into parts of objects which can then be accessed by Javascript or other language to run code on them, to change or interact with the HTML dinamically</p>
+        </div>
+        <div class="mt-5">
+            <h1  class="mb-3" >How can you select elements from the DOM?</h1>
+            <p>You Can use
+              <h5>1. document.getElementById('elementId') </h5> 
+                It selects by the Id of Element. Used to get only one element as only one element can have an unique Id. <br>
+
+
+
+              <h5>2. document.getElementsByClassName('className') </h5>>It Selects by the Class name of Elements. Can be used to capture more than one element and stored in an array like object. <br>
+
+              <h5> 3. document.getElementsByTagName('tagname');</h5> 
+                It Selects by the Tag name of Elements. Can be used to capture more than one element and stored in an array like object. <br>
+
+
+              <h5>4. document.querySelector("Tag name"/."Class name"/#"Id name");</h5>  
+                It Selects by the ("Tag name"/."Class name"/#"Id name") of Elements. Used to capture just one element. For tag name and class name, it will select only the first element with that tag or class <br>
+
+
+            <h5> 5. document.querySelectorAll('Tag Name'/.'class Name')</h5>   
+                It usually Selects by the  Class name or tag name of Elements. Can be used to capture more than one element and stored in an array like object. It can be used with other unique selectors also.<br>
+
+            </p>
+        </div>
+        <div  class="mt-5">
+            <h1 class="mb-3">What is "Event Bubble" ? </h1>
+            <p>
+                When there is an event in the DOM, Event bubble helps to propagate upwards in the DOM tree. <br>
+                The event getting triggered on one element will also trigger the parrents of that element. <br>
+                And thus will it go upwards in the DOM tree. <br>
+                Event Bubble maintains order also. <br>
+                First the main element is triggered, then it's parent, then it's parent and so on. <br>
+                we can manually write code to stop this bubble where we want it to.
+            </p>
+        </div>
+        <div  class="mt-5">
+            <h1  class="mb-3">Waht is CallBack function used for?</h1>
+            <p> If a function is used as a parameter in another function then it is called a <b> CallBack function.</b>
+                <br> A function acts as a variable in the callBack parameter. 
+                <br>
+                A function can do different tasks based on which function is passed to it as a parameter.
+            </p>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
